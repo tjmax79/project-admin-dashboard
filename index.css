@@ -25,7 +25,9 @@
     margin-left:90px
 }
 
-
+.card h6{
+    font-size:10px
+}
 
 .header3{
     display:flex;
@@ -43,7 +45,7 @@ button{
     border-radius:10px;
     width:80px;
     margin:10px;
-    maddi
+    font-size:10px
 }
 
 .entire-header{
@@ -56,7 +58,15 @@ button{
 
 .content-image{
     display:flex;
-    gap:10px
+    gap:10px;
+    justify-content:flex-end;
+
+}
+.target{
+    background-color:yellow;
+    border-radius:6px;
+    
+
 }
 
 .trending{
@@ -77,16 +87,22 @@ button{
     font-size:10px;
     width:200px;
     margin-bottom:30px;
-    border:2px solid red;
+    border-left:4px solid gold;
+    border-right:2px solid gray;
+    border-top:2px solid gray;
+    border-bottom:2px solid gray;
     padding:20px;
-    border-radius:10px
+    border-radius:5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    
 }
+
 
 .announcement-card{
     height:200px;
     font-size:10px;
     width:200px;
-    border:2px solid red;
+    border:2px solid gray;
     padding:20px;
     border-radius:10px;
 }
@@ -95,7 +111,7 @@ button{
     height:150px;
     font-size:10px;
     width:200px;
-    border:2px solid red;
+    border:2px solid gray;
     padding:20px;
     border-radius:10px;
 }
@@ -104,35 +120,45 @@ button{
     display:flex;
     align-items:center;
     font-size:12px;
+    font-weight:bold;
     margin-bottom:20px;
     
 }
 .side2{
     display:flex;
+    font-weight:bold;
+    
 }
 .side3{
     display:flex;
+      font-weight:bold;
 }
 
 .side4{
     display:flex;
+      font-weight:bold;
 }
 .side5{
     display:flex;
+      font-weight:bold;
 }
 .side6{
     display:flex;
+      font-weight:bold;
 }
 .side7{
     display:flex;
     margin-bottom:20px;
+      font-weight:bold;
 }
 .side8{
     display:flex;
+      font-weight:bold;
 }
 
 .side9{
     display:flex;
+      font-weight:bold;
 }
 
 .bar{
@@ -141,12 +167,14 @@ button{
   gap:7px
 
 
+
 }
 
 .sidebar-container{
     background-color:blue;
-    width:120px;
     color:white;
+    padding-left:10px;
+    padding-top:10px;
 
 }
 
@@ -155,8 +183,11 @@ button{
 .main-container{
     display:grid;
     grid-template-columns:1fr 3fr;
+    grid-template-rows: auto auto auto;
     column-gap:5px;
-    /* row-gap:10px */
+    row-gap:5;
+    
+
 
 
 
@@ -167,7 +198,8 @@ button{
 }
 
 .sidebar-container{
-    grid-column: 1 
+    grid-column:1;
+    grid-row:1 /4
 
 }
 
@@ -176,15 +208,23 @@ button{
     grid-template-columns:1fr 1fr;
     grid-column:2;
     
+    
 }
 
 .announcement-card{
-    /* grid-column: 3; */
-}
+    grid-column:3;
+    grid-row:2
+} 
 
 .general-trending{
-    grid-column: 3;
-    grid-row:
-
+    grid-column:3;
+    margin-top:-180px
     
+} 
+svg{
+    color:white;
+}
+
+.title{
+    position:relative
 }
