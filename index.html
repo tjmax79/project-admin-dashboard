@@ -1,311 +1,238 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Dashboard</title>
+    <title>Admin-Dashboard</title>
 </head>
 <body>
-    <div class="main-container">
-        
+<div class="main-container">
 
+    <side-bar>
+        <div class="aside part">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20px"><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg>
+            <p>Dashboard</p>
+        </div>
         
-        <div class="entire-header">
+        <div class="aside">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15px"><path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69M12 3L2 12H5V20H11V14H13V20H19V12H22" /></svg>
+            <p>Home</p>
+        </div>
+
+        <div class="aside">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15px"><path d="M20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22V4C22 2.9 21.1 2 20 2M20 17.2L18.8 16H4V4H20V17.2Z" /></svg>
+            <p>Messages</p>
+        </div>
+
+        <div class="aside">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15px"><path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" /></svg>
+            <p>History</p>
+        </div>
+
+        <div class="aside">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15px"><path d="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M16.53,11.06L15.47,10L10.59,14.88L8.47,12.76L7.41,13.82L10.59,17L16.53,11.06Z" /></svg>
+            <p>Tasks</p>
+        </div>
+
+        <div class="aside part">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15px"><path d="M15,12C13.89,12 13,12.89 13,14A2,2 0 0,0 15,16A2,2 0 0,0 17,14C17,12.89 16.1,12 15,12M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M14,9C14,7.89 13.1,7 12,7C10.89,7 10,7.89 10,9A2,2 0 0,0 12,11A2,2 0 0,0 14,9M9,12A2,2 0 0,0 7,14A2,2 0 0,0 9,16A2,2 0 0,0 11,14C11,12.89 10.1,12 9,12Z" /></svg>
+            <p>Communities</p>
+        </div>
+
+        <div class="aside">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15px"><path d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10M11.25,4L10.88,6.61C9.68,6.86 8.62,7.5 7.85,8.39L5.44,7.35L4.69,8.65L6.8,10.2C6.4,11.37 6.4,12.64 6.8,13.8L4.68,15.36L5.43,16.66L7.86,15.62C8.63,16.5 9.68,17.14 10.87,17.38L11.24,20H12.76L13.13,17.39C14.32,17.14 15.37,16.5 16.14,15.62L18.57,16.66L19.32,15.36L17.2,13.81C17.6,12.64 17.6,11.37 17.2,10.2L19.31,8.65L18.56,7.35L16.15,8.39C15.38,7.5 14.32,6.86 13.12,6.62L12.75,4H11.25Z" /></svg>
+            <p>Settings</p>
+        </div>
+
+        <div class="aside">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15px"><path d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z" /></svg>
+            <p>Supports</p>
+        </div>
+
+        <div class="aside">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15px"><path d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18L5,6.3V11.22C5,15.54 8.25,20 12,21M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9" /></svg>
+            <p>Privacy</p>
+        </div>
+    </side-bar>
+
+    <header >
+        <div class="header-one">
             
-            <div class="main-header1 h1">
-                    <div>
-                        <img src="./project-admin-dashboard/magnify.svg" alt="search" width="15px">
-                    </div>
-                    <div>
-                        <p class="insert-text"></p>
-                    </div>
-                </div>
-                
-                
-                <div class="header2 h2">
-                    <div>
-                        <img src="./project-admin-dashboard/bell-ring-outline.svg" alt="bell" width="15px">
-                    </div>
-                    <div>
-                        <img src="./project-admin-dashboard/bullseye-arrow.svg" alt="arrow" width="15px" class="target" >
-                    </div>
-                    <div>
-                        <p>Tunji Max</p>
-                    </div>
-                </div>
-            
-            <div class="header3">
-                <div>
-                    <img src="./project-admin-dashboard/bullseye-arrow.svg" alt="arrow" width="20px" class="target">
-                </div>
-                <div>
-                    <p>Hi there,</p>
-                    <p>Tunji Max (@morgan)</p>
-                </div>
-            </div>
-            
-            
-            <div class="header4">
-                <div>
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
+        <div class="search-bar">
+            <img src="./assets/search.svg" alt="search" width="15px">
+            <div class="bar"></div>
+        </div>
+
+      <div class="bar-image">
+          <img src="./assets/alarm.svg" alt="alarm" width="15px">
+          <img src="./assets/target.svg" alt="arrow" width="15px" class="target">
+          <p>Olatunji Ogidan</p>
+      </div>
+        </div>
+
+
+        <div class="header-two"> 
+
+        <div class="arrow-name">
+            <img src="./assets/target.svg" alt="target" width="25px" class="target">
+            <div>
+                <p class="greet">Hi there,</p>
+                <h5 class="morgan">Olatunji Ogidan(@teejay)</h5>
             </div>
         </div>
-         
-        <div class="main-body">
-            <!-- <h5 class="title">Your  Projects</h5>NOTE -->
-            <div class="card">
-                <h6>Super Cool Project</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ratione facilis vel possimus sint at tempora magnam, amet veritatis quaerat.</p>
-
-               <div class="content-image">
-                <div>
-                    <img src="./project-admin-dashboard/star-plus-outline.svg" alt="star" width="10px">
-                </div>
-                <div>
-                    <img src="./project-admin-dashboard/eye-plus-outline.svg" alt="eye" width="10px">
-                </div>
-                <div>
-                    <img src="./project-admin-dashboard/source-branch.svg" alt="branch" width="10px">
-                </div>
-               </div>
-            </div>
-       
-         <div class="card">
-                <h6>Less Cool Project</h6>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, tempore.Lorem ipsum dolor sit amet Lorem ipsum dol Corporis ratione facilis vel possimus sint at tempora magnam, amet veritatis quaerat.</p>
-
-               <div class="content-image">
-                <div>
-                    <img src="./project-admin-dashboard/star-plus-outline.svg" alt="star" width="10px">
-                </div>
-                <div>
-                    <img src="./project-admin-dashboard/eye-plus-outline.svg" alt="eye" width="10px">
-                </div>
-                <div>
-                    <img src="./project-admin-dashboard/source-branch.svg" alt="branch" width="10px">
-                </div>
-               </div>
-            </div>
-         <div class="card">
-                <h6 class="">Impossible App</h6>
-                <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ratione.</p>
-
-               <div class="content-image">
-                <div>
-                    <img src="./project-admin-dashboard/star-plus-outline.svg" alt="star" width="10px">
-                </div>
-                <div>
-                    <img src="./project-admin-dashboard/eye-plus-outline.svg" alt="eye" width="10px">
-                </div>
-                <div>
-                    <img src="./project-admin-dashboard/source-branch.svg" alt="branch" width="10px">
-                </div>
-               </div>
-            </div>
         
-         <div class="card">
-                <h6>Easy Pessy App</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ratione facilis vel possimus sint at tempora magnam, amet veritatis quaerat.</p>
-
-               <div class="content-image">
-                <div>
-                    <img src="./project-admin-dashboard/star-plus-outline.svg" alt="star" width="10px">
-                </div>
-                <div>
-                    <img src="./project-admin-dashboard/eye-plus-outline.svg" alt="eye" width="10px">
-                </div>
-                <div>
-                    <img src="./project-admin-dashboard/source-branch.svg" alt="branch" width="10px">
-                </div>
-               </div>
-            </div>
-        
-         <div class="card">
-                <h6>Ad Blocker</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ratione facilis vel possimus sint at tempora magnam, amet veritatis quaerat.</p>
-
-               <div class="content-image">
-                <div>
-                    <img src="./project-admin-dashboard/star-plus-outline.svg" alt="star" width="10px">
-                </div>
-                <div>
-                    <img src="./project-admin-dashboard/eye-plus-outline.svg" alt="eye" width="10px">
-                </div>
-                <div>
-                    <img src="./project-admin-dashboard/source-branch.svg" alt="branch" width="10px">
-                </div>
-               </div>
-            </div>
-        
-         <div class="card">
-              <div class="line"></div>
-                <h6>Money Maker</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ratione facilis vel possimus sint at tempora magnam, amet veritatis quaerat.</p>
-
-               <div class="content-image">
-                <div>
-                    <img src="./project-admin-dashboard/star-plus-outline.svg" alt="star" width="10px">
-                </div>
-                <div>
-                    <img src="./project-admin-dashboard/eye-plus-outline.svg" alt="eye" width="10px">
-                </div>
-                <div>
-                    <img src="./project-admin-dashboard/source-branch.svg" alt="branch" width="10px">
-                </div>
-               </div>
-            </div>
+        <div class="buttons">
+            <button class="button">New</button>
+            <button class="button">Upload</button>
+            <button class="button">Share</button>
+        </div>
          </div>
-          <div class="sidebar-container">   
-        <div class="side1">
-            <div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" fill="currentColor" ><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"/></svg>
-            
-            </div>
-            <div>
-                <p>Dashboard</p>
-            </div>
-        </div>
-         <div class="side2 bar">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69M12 3L2 12H5V20H11V14H13V20H19V12H22" /></svg>
-            </div>
-            <div>
-                <p>Home</p>
-            </div>
-        </div>
-         <div class="side3 bar">
-            <div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" heigth="15" fill="currentColor"><path d="M20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22V4C22 2.9 21.1 2 20 2M20 17.2L18.8 16H4V4H20V17.2Z" /></svg>
-
-                
-            </div>
-            <div>
-                <p>Message</p>
-            </div>
-        </div>
-         <div class="side4 bar">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" heigth="15" fill="currentColor"><path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" /></svg>
-            </div>
-            <div>
-                <p>History</p>
-            </div>
-        </div>
-         <div class="side5 bar">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" heigth="15" fill="currentColor"><path d="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M16.53,11.06L15.47,10L10.59,14.88L8.47,12.76L7.41,13.82L10.59,17L16.53,11.06Z" /></svg>
-            </div>
-            <div>
-                <p>Task</p>
-            </div>
-        </div>
-         <div class="side6 bar">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" heigth="15" fill="currentColor"><path d="M15,12C13.89,12 13,12.89 13,14A2,2 0 0,0 15,16A2,2 0 0,0 17,14C17,12.89 16.1,12 15,12M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M14,9C14,7.89 13.1,7 12,7C10.89,7 10,7.89 10,9A2,2 0 0,0 12,11A2,2 0 0,0 14,9M9,12A2,2 0 0,0 7,14A2,2 0 0,0 9,16A2,2 0 0,0 11,14C11,12.89 10.1,12 9,12Z" /></svg>
-            </div>
-            <div>
-                <p>communities</p>
-            </div>
-        </div>
-         <div class="side7 bar">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" heigth="15" fill="currentColor"><path d="M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M10,22C9.75,22 9.54,21.82 9.5,21.58L9.13,18.93C8.5,18.68 7.96,18.34 7.44,17.94L4.95,18.95C4.73,19.03 4.46,18.95 4.34,18.73L2.34,15.27C2.21,15.05 2.27,14.78 2.46,14.63L4.57,12.97L4.5,12L4.57,11L2.46,9.37C2.27,9.22 2.21,8.95 2.34,8.73L4.34,5.27C4.46,5.05 4.73,4.96 4.95,5.05L7.44,6.05C7.96,5.66 8.5,5.32 9.13,5.07L9.5,2.42C9.54,2.18 9.75,2 10,2H14C14.25,2 14.46,2.18 14.5,2.42L14.87,5.07C15.5,5.32 16.04,5.66 16.56,6.05L19.05,5.05C19.27,4.96 19.54,5.05 19.66,5.27L21.66,8.73C21.79,8.95 21.73,9.22 21.54,9.37L19.43,11L19.5,12L19.43,13L21.54,14.63C21.73,14.78 21.79,15.05 21.66,15.27L19.66,18.73C19.54,18.95 19.27,19.04 19.05,18.95L16.56,17.95C16.04,18.34 15.5,18.68 14.87,18.93L14.5,21.58C14.46,21.82 14.25,22 14,22H10M11.25,4L10.88,6.61C9.68,6.86 8.62,7.5 7.85,8.39L5.44,7.35L4.69,8.65L6.8,10.2C6.4,11.37 6.4,12.64 6.8,13.8L4.68,15.36L5.43,16.66L7.86,15.62C8.63,16.5 9.68,17.14 10.87,17.38L11.24,20H12.76L13.13,17.39C14.32,17.14 15.37,16.5 16.14,15.62L18.57,16.66L19.32,15.36L17.2,13.81C17.6,12.64 17.6,11.37 17.2,10.2L19.31,8.65L18.56,7.35L16.15,8.39C15.38,7.5 14.32,6.86 13.12,6.62L12.75,4H11.25Z" /></svg>
-            </div>
-            <div>
-                <p>Settings</p>
-            </div>
-        </div>
-         <div class="side8 bar">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" heigth="15" fill="currentColor"><path d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z" /></svg>
-            </div>
-            <div>
-                <p>Support</p>
-            </div>
-        </div>
-         <div class="side9 bar">
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" heigth="15" fill="currentColor"><path d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18L5,6.3V11.22C5,15.54 8.25,20 12,21M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9" /></svg>
-            </div>
-            <div>
-                <p>Privacy</p>
-            </div>
-        </div>
-        </div>
+    </header>
 
 
-        
-        <!-- <h6>Trending</h6> -->
-        <div class="general-trending">  
-        <div class="trending">  
-        <div>
-            <img src="./project-admin-dashboard/dog-side.svg" alt="dog" width="10px">
-        </div>
-        <div>
-         <p>@tunji</p>
-         <p>World Peace Builder</p>
-        </div>
-    </div>
-   
+    <main>
+        <p class="project-title">Your Projects</p> 
 
-        <div class="trending2">    
-            <div>
-                <img src="./project-admin-dashboard/bullseye-arrow.svg" alt="arrow" width="10px">
-            </div>
-            <div>
-                <p>@esther</p>
-                <p>Super Cool Project</p>
-            </div>
-        </div>  
-
-        <div class="trending3">
-            <div>
-                <img src="./project-admin-dashboard/face-man.svg" alt="face" width="10px">
-            </div>
-            <div>
-                <p>@jesutofunmi</p>
-                <p>Life Changing App</p>
+           <div class="card-control">
+        <div class="card" >
+            <h3 class="content-header">Super Cool Project</h3>
+            <div class="images">
+            <p class="content-para"> Ea asperiores molestias totam dicta consequatur, ad temporibus accusantium perspiciatis sint optio harum, voluptates dolor quibusdam rerum id! Ea, fugit.</p>
+            <div class="staeyebra">
+                <img src="./assets/star.svg" alt="star" width="10px">
+                <img src="./assets/eye.svg" alt="eye" width="10px">
+                <img src="./assets/branch.svg" alt="branch" width="10px">
             </div>
         </div>
+          </div>
 
-        <div class="trending4">
-            <div>
-                <img src="./project-admin-dashboard/account-tie-woman.svg" alt="face" width="10px">
-            </div>
-            <div>
-                <p>@jesuloba</p>
-                No Traffic Maker
-            </div>
-        </div>
-        </div>
+          <div  class="card">
+            <h3 class="content-header">Less Cool Project</h3>
+            <div class="images">
 
-          <!-- <h6>Announcements</h6>NOTE -->
-          <div class="announcement-card">
-          <h6>Site Maintance</h6>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum natus possimus itaque, quod explicabo quasi!</p>
-          <hr>
-          <h6>Community Share Day</h6>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, aperiam.</p>
-          <hr>
-          <h6>Updated Privacy Policy</h6>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus dicta sit molestias repellendus delectus nostrum harum nemo quibusdam blanditiis quasi!</p>
-        </div>
-
-
-<!--                
-    </div>
-     </div>
-         </div> -->
-         
-    </div>
-    
-       
-        
            
+            <p class="content-para"> amet consectetur adipisicing elit.  facilis aliquam ducimus aut minus! Quidem debitis quisquam delectus id consequuntuvitae labore! Numquam deleniti vel necessitatibus voluptatibus!</p>
+            <div class="staeyebra">
+                <img src="./assets/star.svg" alt="star" width="10px">
+                <img src="./assets/eye.svg" alt="eye" width="10px">
+                <img src="./assets/branch.svg" alt="branch" width="10px">
+            </div>
+        </div>
+         </div>
 
+          <div  class="card">
+            <h3 class="content-header">Impossible App</h3>
+            <div class="images">
+
+           
+            <p class="content-para"> Ea asperiores molestias totam dicta consequatur, ad temporibus Lorem ipsum dolor sit amet..</p>
+            <div class="staeyebra">
+                <img src="./assets/star.svg" alt="star" width="10px">
+                <img src="./assets/eye.svg" alt="eye" width="10px">
+                <img src="./assets/branch.svg" alt="branch" width="10px">
+            </div>
+        </div>
+         </div>
+
+          <div  class="card">
+            <h3 class="content-header">Easy Peasy App</h3>
+            <div class="images">
+
+                <p class="content-para"> Ea asperiores molestias totam dicta consequatur, ad temporibus accusantium perspiciatis sint optio harum, voluptates dolor quibusdam rerum id! Ea, fugit.</p>
+                <div class="staeyebra">
+                    <img src="./assets/star.svg" alt="star" width="10px">
+                    <img src="./assets/eye.svg" alt="eye" width="10px">
+                    <img src="./assets/branch.svg" alt="branch" width="10px">
+                </div>
+            </div>
+        </div>
+
+          <div  class="card">
+            <h3 class="content-header">Add Blocker</h3>
+            <div class="images">
+
+                <p class="content-para"> dicta consequatur, ad temporibus accusantium perspiciatis sint optio harum, voluptates dolor quibusdam rerum id! Ea, fugit.</p>
+                <div class="staeyebra">
+                    <img src="./assets/star.svg" alt="star" width="10px">
+                    <img src="./assets/eye.svg" alt="eye" width="10px">
+                    <img src="./assets/branch.svg" alt="branch" width="10px">
+                </div>
+            </div>
+        </div>
+
+          <div  class="card">
+            <h3 class="content-header">Money Maker</h3>
+            <div class="images">
+
+                <p class="content-para"> Ea asperiores molestias totam dicta consequatur, ad temporibus accusantium perspiciatis sint optio harum, voluptates dolor quibusdam rerum id! Ea, fugit.</p>
+                <div class="staeyebra">
+                    <img src="./assets/star.svg" alt="star" width="10px">
+                    <img src="./assets/eye.svg" alt="eye" width="10px">
+                    <img src="./assets/branch.svg" alt="branch" width="10px">
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+
+    <aside>
+        <p>Announcements</p>
+
+        <div class="wordings">
+            <h3 class="wordings-cont">Site Maintenance</h3>
+            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi corporis itaque numquam quo repellat quam voluptate vitae qui esse aut?</p>
+            <hr>
+            <h3 class="wordings-cont">Community Share Day</h3>
+            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, voluptates.</p>
+            <hr>
+            <h3 class="wordings-cont">Updated Privacy Policy</h3>
+            <p class="para">
+
+                Optio esse ullam ipsam et suscipit exercitationem culpa aliquid nulla. Impedit sed ex maxime neque debitis amet repudiandae deserunt? Iusto, dolor facilis!
+            </p>
+        </div>
+
+        <p id="trend">Trending</p>
+        <div class="trending-card">
+        <div class="aside2">
+            <img src="./assets/dog.svg" alt="dog" width="20px" id="dog">
+            <div class="names">
+               <p>@jesutofunmi</p> 
+               <p class="trend-cate">World Peace Builder</p>
+            </div>
+        </div>
+
+         <div class="aside2">
+            <img src="./assets/target.svg" alt="arrow" width="20px" id="arrow-hit">
+            <div class="names">
+               <p>@jesusegunfunmi</p> 
+               <p class="trend-cate">Super Cool Project</p>
+            </div>
+        </div>
+
+         <div class="aside2">
+            <img src="./assets/face-man.svg" alt="face" width="20px" id="male-face">
+            <div class="names">
+               <p>@jesuloba</p> 
+               <p class="trend-cate">Life Changing App</p>
+            </div>
+        </div>
+
+         <div class="aside2">
+            <img src="./assets/woman.svg" alt="woman" width="20px" id="woman">
+            <div class="names">
+               <p>@esther</p> 
+               <p class="trend-cate">No Traffic Maker</p>
+            </div>
+        </div>
+         </div>
+
+    </aside>
+ 
+
+</div>
 </body>
 </html>
